@@ -7,16 +7,35 @@
     <title>Chatbox - ConnectNITTe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #0ca094;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
         .container {
             padding: 40px;
         }
 
         .card {
             margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .btn-primary {
-            background-color: #007bff;
+            background-color: #0ca094;
             border: none;
             border-radius: 50px;
             padding: 10px 20px;
@@ -25,7 +44,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: #087e6d;
         }
 
         .form-control {
@@ -39,6 +58,7 @@
             padding: 15px;
             border-radius: 15px;
             margin-bottom: 20px;
+            background-color: #fff;
         }
 
         .chat-message {
@@ -51,12 +71,38 @@
 
         .chat-message .username {
             font-weight: bold;
+            color: #0ca094;
+        }
+
+        h1, p, .card-title {
+            color: #333;
+        }
+
+        footer {
+            background-color: #0ca094;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer i {
+            margin: 0 10px;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="main.html">ConnectNITTe</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,7 +116,7 @@
                     <a class="nav-link" href="#">Chatbox</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
             </ul>
         </div>
@@ -105,6 +151,18 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ConnectNITTe. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+            <p>Follow us on:
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
